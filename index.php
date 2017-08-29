@@ -1,21 +1,21 @@
 <?php 
 for($i=1; $i<101; $i++)
 {
-    $flaga = false;
+    $flaga = true;
     if($i%3==0)
     { 
         echo "Fizz";
-        $flaga=true;
+        $flaga=false;
     }
     if($i%5==0)
     {
         echo "Buzz";
-        $flaga=true;
+        $flaga=false;
     }
     if($i%7==0)
     {
         echo "Seven";
-        $flaga=true;
+        $flaga=false;
     } 
     if($flaga) echo $i;
     echo "</br>";
