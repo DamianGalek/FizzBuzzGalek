@@ -1,23 +1,23 @@
 <?php 
 for($i=1; $i<101; $i++)
 {
-    $flaga = true;
+    $writeNumber = true;
     if($i%3==0)
     { 
         echo "Fizz";
-        $flaga=false;
+        $writeNumber=false;
     }
     if($i%5==0)
     {
         echo "Buzz";
-        $flaga=false;
+        $writeNumber=false;
     }
     if($i%7==0)
     {
         echo "Seven";
-        $flaga=false;
+        $writeNumber=false;
     } 
-    if($flaga) echo $i;
+    if($writeNumber) echo $i;
     echo "</br>";
 }
 ?>
