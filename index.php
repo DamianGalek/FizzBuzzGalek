@@ -1,23 +1,20 @@
 <?php 
 for($i=1; $i<101; $i++)
 {
-    $writeNumber = true;
+    $output="";
     if($i%3==0)
     { 
-        echo "Fizz";
-        $writeNumber=false;
+        $output="Fizz";
     }
     if($i%5==0)
     {
-        echo "Buzz";
-        $writeNumber=false;
+        $output=$output."Buzz";
     }
     if($i%7==0)
     {
-        echo "Seven";
-        $writeNumber=false;
+        $output=$output."Seven";
     } 
-    if($writeNumber) echo $i;
-    echo "</br>";
+    if($output=="") $output=$i;
+    echo $output."</br>";
 }
 ?>
